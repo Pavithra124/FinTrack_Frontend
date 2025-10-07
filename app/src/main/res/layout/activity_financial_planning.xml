@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Financial Planning"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:text="Calculate your savings potential"
+            android:textSize="15sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Monthly Income"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Primary Salary -->
+        <TextView
+            android:text="Primary Salary"
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPrimarySalary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/googlebg"
+            android:hint="₹ 0.00"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:paddingStart="13dp"
+            android:paddingLeft="13dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Additional Income -->
+        <TextView
+            android:text="Additional Income"
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etAdditionalIncome"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/googlebg"
+            android:hint="₹ 0.00"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:paddingStart="13dp"
+            android:paddingLeft="13dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Budget -->
+        <TextView
+            android:text="Monthly Budget"
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etBudget"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/googlebg"
+            android:hint="₹ 0.00"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:paddingStart="13dp"
+            android:paddingLeft="13dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Total Income -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/googlebg"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:text="Total Monthly Income"
+                android:textColor="#374151"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTotalIncome"
+                android:text="₹0.00"
+                android:textColor="#111827"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSavee"
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#007AFF"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

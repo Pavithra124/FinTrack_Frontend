@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" />
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_pic"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mailframe"
+            android:padding="4dp"
+            android:contentDescription="Profile Picture" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- BASIC INFORMATION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BASIC INFORMATION"
+            android:textStyle="bold"
+            android:textColor="#888888" />
+
+        <!-- Full Name -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="#888888"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="John Smith"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/ivEditFullName"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit"
+                app:tint="@color/black"
+                android:paddingStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Date of Birth -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="#888888"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="15 April 1990"
+                android:background="@null"
+                android:inputType="date"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/ivEditDob"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit"
+                app:tint="@color/black"
+                android:paddingStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Gender -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="#888888"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Male"
+                android:background="@null"
+                android:inputType="text"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/ivEditGender"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit"
+                app:tint="@color/black"
+                android:paddingStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Nationality -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Nationality"
+                android:textColor="#888888"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="American"
+                android:background="@null"
+                android:inputType="text"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/ivEditNationality"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit"
+                app:tint="@color/black"
+                android:paddingStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- CONTACT DETAILS header -->
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT DETAILS"
+            android:textStyle="bold"
+            android:textColor="#888888" />
+
+        <!-- Email -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textColor="#888888" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="15"
+                android:inputType="textEmailAddress"
+                android:padding="0dp"
+                android:text="john.smith@email.com" />
+
+            <ImageView
+                android:id="@+id/ivEditEmail"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit"
+                app:tint="@color/black"
+                android:paddingStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Phone -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="#888888"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:text="+1 (555) 123-4567"
+                android:background="@null"
+                android:inputType="phone"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/ivEditPhone"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit"
+                app:tint="@color/black"
+                android:paddingStart="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/design_default_color_error"
+            android:layout_marginTop="24dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

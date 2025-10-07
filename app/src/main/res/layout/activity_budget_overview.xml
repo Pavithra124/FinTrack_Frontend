@@ -1,0 +1,333 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F8FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Overview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#202C44"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="March 2024"
+            android:textSize="14sp"
+            android:textColor="#8F9BB3"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Circular Progress Indicator (placeholder) -->
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/screenshot_2025_08_18_084713"
+                android:contentDescription="Circular Progress"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tx_budget_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="42% Used"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#315BFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹15,400 / ₹36,000"
+                    android:textColor="#6B7280"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Alert -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert: Approaching 50% of monthly budget"
+            android:textColor="#FFA726"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Days Remaining -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/screenshot_2025_08_18_084713"
+                app:tint="#315BFF"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 Days Remaining"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#202C44"/>
+        </LinearLayout>
+
+        <!-- Expense Categories -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Categories"
+            android:textColor="#222B45"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Housing Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/camera"
+                app:tint="#1976D2"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Housing"
+                android:textColor="#222B45"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35%"
+                android:textColor="#8F9BB3"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹5400"
+                android:textColor="#202C44"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="35"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="#1976D2"
+            android:backgroundTint="#E3EAFD"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Food Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/food"
+                app:tint="#42A5F5"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textColor="#222B45"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="#8F9BB3"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹3850"
+                android:textColor="#202C44"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="25"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="#42A5F5"
+            android:backgroundTint="#E3EAFD"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Transportation Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/transportation"
+                app:tint="#64B5F6"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Transportation"
+                android:textColor="#222B45"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20%"
+                android:textColor="#8F9BB3"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹3080"
+                android:textColor="#202C44"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="20"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="#64B5F6"
+            android:backgroundTint="#E3EAFD"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Entertainment Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/entertainment"
+                app:tint="#90CAF9"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:textColor="#222B45"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15%"
+                android:textColor="#8F9BB3"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹2310"
+                android:textColor="#202C44"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="15"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="#90CAF9"
+            android:backgroundTint="#E3EAFD"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Others Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/others"
+                app:tint="#E3EAFD"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textColor="#222B45"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5%"
+                android:textColor="#8F9BB3"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹770"
+                android:textColor="#202C44"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="5"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="#B6C9F3"
+            android:backgroundTint="#E3EAFD"
+            android:layout_marginBottom="14dp"/>
+
+    </LinearLayout>
+</ScrollView>
