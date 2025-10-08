@@ -71,4 +71,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    // Google Play Billing
+    implementation("com.android.billingclient:billing-ktx:6.1.0")
 }

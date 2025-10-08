@@ -7,6 +7,7 @@ import com.simats.financetrack.auth.AuthManager
 import com.simats.financetrack.databinding.ActivityWelcomeBinding
 import com.simats.financetrack.models.User
 import com.simats.financetrack.repository.ExpenseRepository
+import com.simats.financetrack.ui.auth.LoginActivity
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -28,13 +29,13 @@ class WelcomeActivity : AppCompatActivity() {
     private fun setupClickListeners() {
         binding.btnGetStarted.setOnClickListener {
             // Redirect to signup
-            startActivity(Intent(this, com.simats.financetrack.ui.auth.SignupActivity::class.java))
+            startActivity(Intent(this, SubscriptionActivity::class.java))
             finish()
         }
 
         binding.btnSkip.setOnClickListener {
             // Redirect to login
-            startActivity(Intent(this, com.simats.financetrack.ui.auth.LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }
